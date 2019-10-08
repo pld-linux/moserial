@@ -1,13 +1,13 @@
 Summary:	Serial terminal
 Summary(pl.UTF-8):	Terminal szeregowy
 Name:		moserial
-Version:	3.0.11
+Version:	3.0.12
 Release:	1
 License:	GPL v3+
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/moserial/3.0/%{name}-%{version}.tar.xz
-# Source0-md5:	2d8af3b524464f148b438162a8eac0be
-URL:		https://wiki.gnome.org/moserial
+# Source0-md5:	834441e37f06727c250ebe65bf436c34
+URL:		https://wiki.gnome.org/Apps/Moserial
 BuildRequires:	gettext-tools
 BuildRequires:	glib2-devel >= 1:2.12.0
 BuildRequires:	gtk+3-devel >= 3.0.0
@@ -15,7 +15,7 @@ BuildRequires:	intltool >= 0.35.0
 BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.596
 BuildRequires:	tar >= 1:1.22
-BuildRequires:	vala >= 2:0.12
+BuildRequires:	vala >= 2:0.16.0
 BuildRequires:	xz
 BuildRequires:	yelp-tools
 Requires(post,postun):	gtk-update-icon-cache
