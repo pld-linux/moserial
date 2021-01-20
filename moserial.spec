@@ -1,16 +1,16 @@
 Summary:	Serial terminal
 Summary(pl.UTF-8):	Terminal szeregowy
 Name:		moserial
-Version:	3.0.12
+Version:	3.0.13
 Release:	1
 License:	GPL v3+
 Group:		X11/Applications
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/moserial/3.0/%{name}-%{version}.tar.xz
-# Source0-md5:	834441e37f06727c250ebe65bf436c34
+Source0:	https://download.gnome.org/sources/moserial/3.0/%{name}-%{version}.tar.xz
+# Source0-md5:	5c0ada1b7b8fe2393062f0c1da8b035c
 URL:		https://wiki.gnome.org/Apps/Moserial
 BuildRequires:	gettext-tools
 BuildRequires:	glib2-devel >= 1:2.12.0
-BuildRequires:	gtk+3-devel >= 3.0.0
+BuildRequires:	gtk+3-devel >= 3.2.0
 BuildRequires:	intltool >= 0.35.0
 BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.596
@@ -20,7 +20,7 @@ BuildRequires:	xz
 BuildRequires:	yelp-tools
 Requires(post,postun):	gtk-update-icon-cache
 Requires:	glib2 >= 1:2.12.0
-Requires:	gtk+3 >= 3.0.0
+Requires:	gtk+3 >= 3.2.0
 Requires:	hicolor-icon-theme
 Suggests:	lrzsz
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -58,9 +58,9 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc AUTHORS ChangeLog MAINTAINERS NEWS README
+%doc AUTHORS ChangeLog NEWS README
 %attr(755,root,root) %{_bindir}/moserial
-%{_datadir}/appdata/moserial.appdata.xml
+%{_datadir}/metainfo/moserial.appdata.xml
 %{_desktopdir}/moserial.desktop
 %{_iconsdir}/hicolor/48x48/apps/moserial.png
 %{_mandir}/man1/moserial.1*
