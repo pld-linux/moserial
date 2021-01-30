@@ -1,12 +1,12 @@
 Summary:	Serial terminal
 Summary(pl.UTF-8):	Terminal szeregowy
 Name:		moserial
-Version:	3.0.14
+Version:	3.0.15
 Release:	1
 License:	GPL v3+
 Group:		X11/Applications
 Source0:	https://download.gnome.org/sources/moserial/3.0/%{name}-%{version}.tar.xz
-# Source0-md5:	d98dfb8d74420733e4965a6fc11111ec
+# Source0-md5:	171af3cc123d236496958d98b981521d
 URL:		https://wiki.gnome.org/Apps/Moserial
 BuildRequires:	gettext-tools
 BuildRequires:	glib2-devel >= 1:2.12.0
