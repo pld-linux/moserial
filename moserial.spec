@@ -1,12 +1,12 @@
 Summary:	Serial terminal
 Summary(pl.UTF-8):	Terminal szeregowy
 Name:		moserial
-Version:	3.0.16
+Version:	3.0.20
 Release:	1
 License:	GPL v3+
 Group:		X11/Applications
 Source0:	https://download.gnome.org/sources/moserial/3.0/%{name}-%{version}.tar.xz
-# Source0-md5:	dd3976db2bdf5a5ea053e66f07b1f791
+# Source0-md5:	9e1057ddda3e1d35c35e091fc555b2aa
 URL:		https://wiki.gnome.org/Apps/Moserial
 BuildRequires:	gettext-tools
 BuildRequires:	glib2-devel >= 1:2.12.0
@@ -62,5 +62,5 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/moserial
 %{_datadir}/metainfo/moserial.appdata.xml
 %{_desktopdir}/moserial.desktop
-%{_iconsdir}/hicolor/48x48/apps/moserial.png
+%{_iconsdir}/hicolor/scalable/apps/moserial.svg
 %{_mandir}/man1/moserial.1*
